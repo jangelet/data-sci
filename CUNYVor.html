@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_eadf535cc26d4233b5bdb8a07050be88 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eadf535cc26d4233b5bdb8a07050be88" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_eadf535cc26d4233b5bdb8a07050be88 = L.map(
+                                  'map_eadf535cc26d4233b5bdb8a07050be88',
+                                  {center: [40.75,-73.9],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1f55f64aaa14493a94e51767b4370b38 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+
+        
+    
+
+            var marker_991698eb091b42bb88c89dedd7c5e60c = L.marker(
+                [40.740977,-73.984252],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_811c24d3403d4a13aa6592cd95c3c757 = L.popup({maxWidth: '300'});
+
+            
+                var html_c3019e2a72ec4ec482f88b58d1844eba = $('<div id="html_c3019e2a72ec4ec482f88b58d1844eba" style="width: 100.0%; height: 100.0%;">Baruch College</div>')[0];
+                popup_811c24d3403d4a13aa6592cd95c3c757.setContent(html_c3019e2a72ec4ec482f88b58d1844eba);
+            
+
+            marker_991698eb091b42bb88c89dedd7c5e60c.bindPopup(popup_811c24d3403d4a13aa6592cd95c3c757);
+
+            
+        
+    
+
+            var marker_4d4e8dc4d21e47c29e9073b607e0f9f1 = L.marker(
+                [40.630276,-73.955545],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_5cc313270ea343d88f70e9fb104a0dec = L.popup({maxWidth: '300'});
+
+            
+                var html_821c6db8a53d4689b862a5f89382bff5 = $('<div id="html_821c6db8a53d4689b862a5f89382bff5" style="width: 100.0%; height: 100.0%;">Brooklyn College</div>')[0];
+                popup_5cc313270ea343d88f70e9fb104a0dec.setContent(html_821c6db8a53d4689b862a5f89382bff5);
+            
+
+            marker_4d4e8dc4d21e47c29e9073b607e0f9f1.bindPopup(popup_5cc313270ea343d88f70e9fb104a0dec);
+
+            
+        
+    
+
+            var marker_7c27f573a82441a8ad9de4a976b108c0 = L.marker(
+                [40.717367,-74.012178],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_2f76618028484e07ba3bfefa25386ce8 = L.popup({maxWidth: '300'});
+
+            
+                var html_74c49ee51f384638b3eb1fa91e45dcb0 = $('<div id="html_74c49ee51f384638b3eb1fa91e45dcb0" style="width: 100.0%; height: 100.0%;">Borough of Manhattan Community College</div>')[0];
+                popup_2f76618028484e07ba3bfefa25386ce8.setContent(html_74c49ee51f384638b3eb1fa91e45dcb0);
+            
+
+            marker_7c27f573a82441a8ad9de4a976b108c0.bindPopup(popup_2f76618028484e07ba3bfefa25386ce8);
+
+            
+        
+    
+
+            var marker_b08028055fbc45368d61009a9fecc5de = L.marker(
+                [40.856673,-73.910127],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_81e939cfb3154342a46bba836c06650f = L.popup({maxWidth: '300'});
+
+            
+                var html_05307692f5f14e47a8004c96a188a427 = $('<div id="html_05307692f5f14e47a8004c96a188a427" style="width: 100.0%; height: 100.0%;">Bronx Community College</div>')[0];
+                popup_81e939cfb3154342a46bba836c06650f.setContent(html_05307692f5f14e47a8004c96a188a427);
+            
+
+            marker_b08028055fbc45368d61009a9fecc5de.bindPopup(popup_81e939cfb3154342a46bba836c06650f);
+
+            
+        
+    
+
+            var marker_a3191ee2f45a4de8b59f12ebda6da25d = L.marker(
+                [40.819548,-73.949518],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_b80498e59e3745d8a24cb5aaba9fd7a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_44253abbae2f4ec585121b5df04e4386 = $('<div id="html_44253abbae2f4ec585121b5df04e4386" style="width: 100.0%; height: 100.0%;">The City College of New York</div>')[0];
+                popup_b80498e59e3745d8a24cb5aaba9fd7a1.setContent(html_44253abbae2f4ec585121b5df04e4386);
+            
+
+            marker_a3191ee2f45a4de8b59f12ebda6da25d.bindPopup(popup_b80498e59e3745d8a24cb5aaba9fd7a1);
+
+            
+        
+    
+
+            var marker_26fa0477c74d44879cf91171000da5a2 = L.marker(
+                [40.747639,-73.943676],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_fcbede7179d04132bcd0fcbcc2d5b256 = L.popup({maxWidth: '300'});
+
+            
+                var html_93d0ff2305884bb6894cda616d4b46c6 = $('<div id="html_93d0ff2305884bb6894cda616d4b46c6" style="width: 100.0%; height: 100.0%;">CUNY School of Law</div>')[0];
+                popup_fcbede7179d04132bcd0fcbcc2d5b256.setContent(html_93d0ff2305884bb6894cda616d4b46c6);
+            
+
+            marker_26fa0477c74d44879cf91171000da5a2.bindPopup(popup_fcbede7179d04132bcd0fcbcc2d5b256);
+
+            
+        
+    
+
+            var marker_a56eda894042469ba4d06454148bac99 = L.marker(
+                [40.748724,-73.984205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_a2b6ba51f8aa4f62a67460b719b735ef = L.popup({maxWidth: '300'});
+
+            
+                var html_6fb3913ffbad481587a4582a327ca489 = $('<div id="html_6fb3913ffbad481587a4582a327ca489" style="width: 100.0%; height: 100.0%;">The Graduate School and University Center</div>')[0];
+                popup_a2b6ba51f8aa4f62a67460b719b735ef.setContent(html_6fb3913ffbad481587a4582a327ca489);
+            
+
+            marker_a56eda894042469ba4d06454148bac99.bindPopup(popup_a2b6ba51f8aa4f62a67460b719b735ef);
+
+            
+        
+    
+
+            var marker_38e7d27f4b8d49a7b276ce8ae5684c4b = L.marker(
+                [40.768731,-73.964915],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_dd1bcc537a824dacb26581a05981cc96 = L.popup({maxWidth: '300'});
+
+            
+                var html_0bf4e9dcece441678dc37339abfb7687 = $('<div id="html_0bf4e9dcece441678dc37339abfb7687" style="width: 100.0%; height: 100.0%;">Hunter College</div>')[0];
+                popup_dd1bcc537a824dacb26581a05981cc96.setContent(html_0bf4e9dcece441678dc37339abfb7687);
+            
+
+            marker_38e7d27f4b8d49a7b276ce8ae5684c4b.bindPopup(popup_dd1bcc537a824dacb26581a05981cc96);
+
+            
+        
+    
+
+            var marker_78bdb2c325d843dfbda31b236579ae26 = L.marker(
+                [40.817828,-73.926862],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_da9d951dea59423eb5c5f70f3155896b = L.popup({maxWidth: '300'});
+
+            
+                var html_ca04ec2e2bae4843ace9f52d6c8e805b = $('<div id="html_ca04ec2e2bae4843ace9f52d6c8e805b" style="width: 100.0%; height: 100.0%;">Hostos Community College</div>')[0];
+                popup_da9d951dea59423eb5c5f70f3155896b.setContent(html_ca04ec2e2bae4843ace9f52d6c8e805b);
+            
+
+            marker_78bdb2c325d843dfbda31b236579ae26.bindPopup(popup_da9d951dea59423eb5c5f70f3155896b);
+
+            
+        
+    
+
+            var marker_a55272f298b0430ea670becbb0c4d75b = L.marker(
+                [40.769939,-73.986469],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_81bb91b2ab734af0a76c98121ebdcd4a = L.popup({maxWidth: '300'});
+
+            
+                var html_1cfb2ca907e745029a54c1d991796efe = $('<div id="html_1cfb2ca907e745029a54c1d991796efe" style="width: 100.0%; height: 100.0%;">John Jay College of Criminal Justice</div>')[0];
+                popup_81bb91b2ab734af0a76c98121ebdcd4a.setContent(html_1cfb2ca907e745029a54c1d991796efe);
+            
+
+            marker_a55272f298b0430ea670becbb0c4d75b.bindPopup(popup_81bb91b2ab734af0a76c98121ebdcd4a);
+
+            
+        
+    
+
+            var marker_f89eb1390d684b89ba207bee9d0a17cb = L.marker(
+                [40.578349,-73.934465],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_9e2c2dfd2670454abf9e524e75c24fe1 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c8afba95ec84f168008320cd33457b5 = $('<div id="html_5c8afba95ec84f168008320cd33457b5" style="width: 100.0%; height: 100.0%;">Kingsborough Community College</div>')[0];
+                popup_9e2c2dfd2670454abf9e524e75c24fe1.setContent(html_5c8afba95ec84f168008320cd33457b5);
+            
+
+            marker_f89eb1390d684b89ba207bee9d0a17cb.bindPopup(popup_9e2c2dfd2670454abf9e524e75c24fe1);
+
+            
+        
+    
+
+            var marker_488ab8850b8844268644416947cd3fc8 = L.marker(
+                [40.873442,-73.889361],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_8f31f98071f848c18f97b5ce586d324f = L.popup({maxWidth: '300'});
+
+            
+                var html_30f54feb7d84413a82619022d064b6ab = $('<div id="html_30f54feb7d84413a82619022d064b6ab" style="width: 100.0%; height: 100.0%;">Lehman College</div>')[0];
+                popup_8f31f98071f848c18f97b5ce586d324f.setContent(html_30f54feb7d84413a82619022d064b6ab);
+            
+
+            marker_488ab8850b8844268644416947cd3fc8.bindPopup(popup_8f31f98071f848c18f97b5ce586d324f);
+
+            
+        
+    
+
+            var marker_23cc0152d80b4beca297a754278150a9 = L.marker(
+                [40.743951,-73.935154],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_1d8079ed573c4992bdd416d816903f9c = L.popup({maxWidth: '300'});
+
+            
+                var html_2f1eee1e43904588acd82704e4cb0146 = $('<div id="html_2f1eee1e43904588acd82704e4cb0146" style="width: 100.0%; height: 100.0%;">LaGuardia Community College</div>')[0];
+                popup_1d8079ed573c4992bdd416d816903f9c.setContent(html_2f1eee1e43904588acd82704e4cb0146);
+            
+
+            marker_23cc0152d80b4beca297a754278150a9.bindPopup(popup_1d8079ed573c4992bdd416d816903f9c);
+
+            
+        
+    
+
+            var marker_d37554976bce4600b7de3c3559511d55 = L.marker(
+                [40.66624,-73.957349],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_edf68fbd4e3647118ae72facb3b534f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_a4b4b7ce05df48d6aa81b8c19b5de2f5 = $('<div id="html_a4b4b7ce05df48d6aa81b8c19b5de2f5" style="width: 100.0%; height: 100.0%;">Medgar Evers College</div>')[0];
+                popup_edf68fbd4e3647118ae72facb3b534f3.setContent(html_a4b4b7ce05df48d6aa81b8c19b5de2f5);
+            
+
+            marker_d37554976bce4600b7de3c3559511d55.bindPopup(popup_edf68fbd4e3647118ae72facb3b534f3);
+
+            
+        
+    
+
+            var marker_cfda24baaa5d444ba73f0e2531c44940 = L.marker(
+                [40.695507,-73.987882],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_71d52e51a05541f3bbf68d656480367b = L.popup({maxWidth: '300'});
+
+            
+                var html_55da8e6c43164b5ba70506b6923d242c = $('<div id="html_55da8e6c43164b5ba70506b6923d242c" style="width: 100.0%; height: 100.0%;">New York City College of Technology</div>')[0];
+                popup_71d52e51a05541f3bbf68d656480367b.setContent(html_55da8e6c43164b5ba70506b6923d242c);
+            
+
+            marker_cfda24baaa5d444ba73f0e2531c44940.bindPopup(popup_71d52e51a05541f3bbf68d656480367b);
+
+            
+        
+    
+
+            var marker_51fc4e76e9814d128b9e62180cf1fb5f = L.marker(
+                [40.744988,-73.816444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_67e6c741e3ea4c6c96cacfd59fecc397 = L.popup({maxWidth: '300'});
+
+            
+                var html_e8b96b9de030476d8d8cfa0d25bcd625 = $('<div id="html_e8b96b9de030476d8d8cfa0d25bcd625" style="width: 100.0%; height: 100.0%;">Queensborough Community College</div>')[0];
+                popup_67e6c741e3ea4c6c96cacfd59fecc397.setContent(html_e8b96b9de030476d8d8cfa0d25bcd625);
+            
+
+            marker_51fc4e76e9814d128b9e62180cf1fb5f.bindPopup(popup_67e6c741e3ea4c6c96cacfd59fecc397);
+
+            
+        
+    
+
+            var marker_7f41d0ef2e5d4a96b15533393c30ef3d = L.marker(
+                [40.736316,-73.820035],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_fb59b31d3560493882956d126b0a9e5c = L.popup({maxWidth: '300'});
+
+            
+                var html_3da0b8975bb24d9db4e1294c8e2e0a29 = $('<div id="html_3da0b8975bb24d9db4e1294c8e2e0a29" style="width: 100.0%; height: 100.0%;">Queens College</div>')[0];
+                popup_fb59b31d3560493882956d126b0a9e5c.setContent(html_3da0b8975bb24d9db4e1294c8e2e0a29);
+            
+
+            marker_7f41d0ef2e5d4a96b15533393c30ef3d.bindPopup(popup_fb59b31d3560493882956d126b0a9e5c);
+
+            
+        
+    
+
+            var marker_5ba464694b044545a8eede11b0121502 = L.marker(
+                [40.608648,-74.153563],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_198652a66608408b9d2a62b8cda2c2d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_7afaa5a0425748f586a5f770470eb1c4 = $('<div id="html_7afaa5a0425748f586a5f770470eb1c4" style="width: 100.0%; height: 100.0%;">College of Staten Island</div>')[0];
+                popup_198652a66608408b9d2a62b8cda2c2d3.setContent(html_7afaa5a0425748f586a5f770470eb1c4);
+            
+
+            marker_5ba464694b044545a8eede11b0121502.bindPopup(popup_198652a66608408b9d2a62b8cda2c2d3);
+
+            
+        
+    
+
+            var marker_b12abb965c7044e8b8afd09e31934f85 = L.marker(
+                [40.702821,-73.795776],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_77970c4983de48749e7a26d93f9ab930 = L.popup({maxWidth: '300'});
+
+            
+                var html_4edbe396e5124935a47498a0963a4a86 = $('<div id="html_4edbe396e5124935a47498a0963a4a86" style="width: 100.0%; height: 100.0%;">York College</div>')[0];
+                popup_77970c4983de48749e7a26d93f9ab930.setContent(html_4edbe396e5124935a47498a0963a4a86);
+            
+
+            marker_b12abb965c7044e8b8afd09e31934f85.bindPopup(popup_77970c4983de48749e7a26d93f9ab930);
+
+            
+        
+    
+
+            var marker_16d9f836fa634c668f60b8bb5bdfe4c3 = L.marker(
+                [40.752846,-73.984133],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_5fee9cbb489246caa47a11329a3d77d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8780ed4286104947809df7cd13c7df3d = $('<div id="html_8780ed4286104947809df7cd13c7df3d" style="width: 100.0%; height: 100.0%;">Guttman Community College</div>')[0];
+                popup_5fee9cbb489246caa47a11329a3d77d2.setContent(html_8780ed4286104947809df7cd13c7df3d);
+            
+
+            marker_16d9f836fa634c668f60b8bb5bdfe4c3.bindPopup(popup_5fee9cbb489246caa47a11329a3d77d2);
+
+            
+        
+    
+
+            var marker_8ed016788a5f4e14861b3a3f9f9cd7d2 = L.marker(
+                [40.748151,-73.989723],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_fe0ce30e8b4d4b2a9ea93b5dcb09f803 = L.popup({maxWidth: '300'});
+
+            
+                var html_a97254dbeb7546fdad2b4ed31d2e3c79 = $('<div id="html_a97254dbeb7546fdad2b4ed31d2e3c79" style="width: 100.0%; height: 100.0%;">School of Professional Studies</div>')[0];
+                popup_fe0ce30e8b4d4b2a9ea93b5dcb09f803.setContent(html_a97254dbeb7546fdad2b4ed31d2e3c79);
+            
+
+            marker_8ed016788a5f4e14861b3a3f9f9cd7d2.bindPopup(popup_fe0ce30e8b4d4b2a9ea93b5dcb09f803);
+
+            
+        
+    
+
+            var marker_6ea418a7fc0b48f786fb21823714c4bd = L.marker(
+                [40.755343,-73.988846],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+            
+    
+            var popup_fb66d9ccb19848a19a042aeb66625faf = L.popup({maxWidth: '300'});
+
+            
+                var html_02690628e5924ee2ba2adccc9d63ac8f = $('<div id="html_02690628e5924ee2ba2adccc9d63ac8f" style="width: 100.0%; height: 100.0%;">School of Journalism</div>')[0];
+                popup_fb66d9ccb19848a19a042aeb66625faf.setContent(html_02690628e5924ee2ba2adccc9d63ac8f);
+            
+
+            marker_6ea418a7fc0b48f786fb21823714c4bd.bindPopup(popup_fb66d9ccb19848a19a042aeb66625faf);
+
+            
+        
+    
+
+            
+
+                var geo_json_36541f237ab2408c9ac465e6d1c2a1d2 = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [[]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.86259248064158, 40.63776823416672]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-74.05479882893823, 40.621703563560644], [-74.0483184852729, 40.56237192439285], [-73.86259248064158, 40.63776823416672], [-73.86933947136315, 40.65262742447059], [-74.00627442593733, 40.6457585929154]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-74.05479882893823, 40.621703563560644], [-74.0483184852729, 40.56237192439285]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.88115146389926, 40.6865023111174], [-73.87597449822601, 40.76455956211135], [-73.79314352020978, 40.73025997239083], [-73.87370566010377, 40.67191225029237]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.87370566010377, 40.67191225029237], [-73.86933947136315, 40.65262742447059], [-73.86259248064158, 40.63776823416672]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.88115146389926, 40.6865023111174], [-73.94872159417815, 40.705800982367805], [-74.00627442593733, 40.6457585929154], [-73.86933947136315, 40.65262742447059], [-73.87370566010377, 40.67191225029237]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.85355300843732, 40.808845738445484]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.85530667642016, 40.81002825189577]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.9362016300991, 40.844878993299226]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.94043958354932, 40.78905627622466], [-73.97401654141643, 40.79922973038922], [-74.69323783030235, 41.33493788507137]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.9309454561535, 40.781697781208806], [-73.94043958354932, 40.78905627622466], [-73.9362016300991, 40.844878993299226], [-73.85530667642016, 40.81002825189577], [-73.85355300843732, 40.808845738445484], [-73.87606327706469, 40.774722470443045], [-73.92454152416612, 40.78016369876803]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.95416084074883, 40.71172123241278], [-73.94872159417815, 40.705800982367805], [-73.88115146389926, 40.6865023111174], [-73.87597449822601, 40.76455956211135], [-73.87606327706469, 40.774722470443045], [-73.92454152416612, 40.78016369876803]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.95933393346654, 40.716107822926844], [-73.98918467182672, 40.71849089264858], [-74.06270280362455, 40.63678016391299], [-74.05479882893823, 40.621703563560644], [-74.00627442593733, 40.6457585929154], [-73.94872159417815, 40.705800982367805], [-73.95416084074883, 40.71172123241278]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-74.03454833988211, 40.757266519963395], [-73.98782737060341, 40.751569316117795], [-73.9824138938134, 40.761787063859586], [-74.0633628960129, 40.77496983847098]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-74.0633628960129, 40.77496983847098], [-74.23260716939222, 40.85773444747026], [-74.69323783030235, 41.33493788507137], [-73.97401654141643, 40.79922973038922], [-73.97606640840552, 40.76265453744016], [-73.9824138938134, 40.761787063859586]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-74.03454833988211, 40.757266519963395], [-74.00172567840443, 40.73332444409665], [-73.98918467182672, 40.71849089264858], [-74.06270280362455, 40.63678016391299], [-74.23260716939222, 40.85773444747026], [-74.0633628960129, 40.77496983847098]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.96599299555363, 40.75046751520616], [-73.9872132908656, 40.7508381753863], [-73.98659300847635, 40.744864845152755], [-73.96403295412301, 40.7447279763578], [-73.96393248613613, 40.74848084920608]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.9872132908656, 40.7508381753863], [-73.98782737060341, 40.751569316117795], [-74.03454833988211, 40.757266519963395], [-74.00172567840443, 40.73332444409665], [-73.98659300847635, 40.744864845152755]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.96403295412301, 40.7447279763578], [-73.95933393346654, 40.716107822926844], [-73.98918467182672, 40.71849089264858], [-74.00172567840443, 40.73332444409665], [-73.98659300847635, 40.744864845152755]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.96599299555363, 40.75046751520616], [-73.97606640840552, 40.76265453744016], [-73.9824138938134, 40.761787063859586], [-73.98782737060341, 40.751569316117795], [-73.9872132908656, 40.7508381753863]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[-73.96393248613613, 40.74848084920608], [-73.9309454561535, 40.781697781208806], [-73.92454152416612, 40.78016369876803], [-73.95416084074883, 40.71172123241278], [-73.95933393346654, 40.716107822926844], [-73.96403295412301, 40.7447279763578]]], "type": "Polygon"}, "properties": {"highlight": {}, "style": {"color": "black", "fillColor": "BuPu", "fillOpacity": 0.01, "opacity": 0.25, "weight": 1}}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(map_eadf535cc26d4233b5bdb8a07050be88);
+                geo_json_36541f237ab2408c9ac465e6d1c2a1d2.setStyle(function(feature) {return feature.properties.style;});
+
+            
+</script>
